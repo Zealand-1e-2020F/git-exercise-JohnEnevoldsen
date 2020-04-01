@@ -17,5 +17,9 @@ namespace GitExercise
             get{return _postNr;}
             set{_postNr = value;}
         }
+        public myClass(string navn, string adresse){
+            _navn = navn;
+            _adresse = adresse;
+        }
     }
 }
