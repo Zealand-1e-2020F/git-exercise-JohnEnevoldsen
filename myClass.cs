@@ -17,12 +17,15 @@ namespace GitExercise
             get{return _postNr;}
             set{_postNr = value;}
         }
+        public string By{
+            get; set;
+        }
         public myClass(string navn, string adresse){
             _navn = navn;
             _adresse = adresse;
         }
         public override string ToString(){
-            return $"Hej jeg hedder {_navn} og jeg bor ved {_adresse}. Postnummeret er {_postNr}";
+            return $"Hej jeg hedder {_navn} og jeg bor i {By} ved {_adresse}. Postnummeret er {_postNr}";
         }
     }
 }
