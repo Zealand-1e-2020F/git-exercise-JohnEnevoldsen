@@ -21,5 +21,8 @@ namespace GitExercise
             _navn = navn;
             _adresse = adresse;
         }
+        public override string ToString(){
+            return $"Hej jeg hedder {_navn} og jeg bor ved {_adresse}. Postnummeret er {_postNr}";
+        }
     }
 }
